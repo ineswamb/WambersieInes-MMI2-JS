@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 15</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 15</h3>
+	<p>
+        <input type="texte" id="ex15_input" placeholder="Entrez votre nombre"> 
+        <button onclick="Multiple()">Calculer</button>
+        <br>Résultat : <b><span id="ex15_result"></span></b><br>
+      </p>
+	
+</body>
+	<script>
+    function Multiple(){
+    var nombre = document.getElementById('ex15_input').value;
+    if (nombre % 3 ===0) {
+    document.getElementById('ex15_result').innerHTML = 'est un multiple de 3';
+    }
+    else if (nombre % 7 ===0) {
+    document.getElementById('ex15_result').innerHTML = 'est un multiple de 7';
+    }
+    else {
+    document.getElementById('ex15_result').innerHTML = 'n est pas un multiple de 3 ou de 7';
+    }
+    }
+	</script>
+</html>

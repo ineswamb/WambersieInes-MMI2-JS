@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 12</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 12</h3>
+	<p>
+        <input type="texte" id="ex12_input" placeholder="Entrez les kms"> 
+        <button onclick="getKm()">Calculer</button>
+        <br>Résultat : <b><span id="ex12_result"></span></b><br>
+      </p>
+	
+</body>
+	<script>
+
+	function getKm(){
+    var nb_km = document.getElementById('ex12_input').value;
+	var minutes = (nb_km / 1000) * 60;
+	var heure = Math.floor(minutes / 60);
+    var newminutes = minutes - (heure * 60);
+	document.getElementById('ex12_result').innerHTML = heure + 'h' + newminutes + 'min';
+    }// JavaScript Document
+		
+	</script>
+</html>

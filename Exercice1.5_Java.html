@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 1.5</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 1.5</h3>
+      <p>
+        <input type="text" id="input1" placeholder="Entrer la valeur">
+		 *
+		<input type="text" id="input2" placeholder="Entrer la valeur">
+		 <span> = <b id="result-exo-1-5"></b> </span> 
+         <button onClick="getMultiply();">Envoyer</button>
+	  </p>
+</body>
+	<script>
+	function getMultiply(){
+	var nb_1 = document.getElementById('input1').value;
+    var nb_2 = document.getElementById('input2').value;
+    var result_ex5 = eval(nb_1+ '*' +nb_2); 
+		
+    document.getElementById('result-exo-1-5').innerHTML = result_ex5;
+    }// JavaScript Document
+	
+	</script>
+</html>

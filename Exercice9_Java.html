@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 9</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 9</h3>
+	 <p>
+        <input type="text" id="ex9_input1" placeholder="Enter Value in Kg"> 
+        => 
+        <b><span id="ex9_1_result"></span></b><br>
+        <button onclick="convertToPound()">Convert Kg to Pounds</button>
+      </p>
+      <p>
+        <input type="text" id="ex9_input2" placeholder="Enter Value in Pds"> 
+        => 
+        <b><span id="ex9_2_result"></span></b><br>
+        <button onclick="convertToKg()">Convert Pounds to Kg</button>
+      </p>
+	
+	
+</body>
+	<script>
+	function convertToPound(){
+    var nb_1 = document.getElementById('ex9_input1').value;
+	var result_ex9_1 = nb_1 / 0.45359237;
+    document.getElementById('ex9_1_result').innerHTML = result_ex9_1;
+    }// JavaScript Document
+		
+	function convertToKg(){
+    var nb_2 = document.getElementById('ex9_input2').value;
+	var result_ex9_2 = nb_2 * 0.45359237;
+    document.getElementById('ex9_2_result').innerHTML = result_ex9_2;
+    }// JavaScript Document
+	</script>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 11</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 11</h3>
+	<p>
+        <input type="number" id="ex11_input" placeholder="Entrez le montant"> 
+        <button onclick="RandomCote()">Côte aléatoire</button>
+        <button onclick="Benefits()">Calculer bénéfices</button>
+        <br>Résultat : <b><span id="ex11_result"></span></b><br>
+      </p>
+	
+</body>
+	<script>
+		
+	var nombreRandom = Math.floor(Math.random() * (20 - 0.5) + 0.5);
+	function RandomCote(){
+    document.getElementById('ex11_result').innerHTML = nombreRandom;
+    }// JavaScript Document
+		
+	function Benefits(){
+	var nb_x = document.getElementById('ex11_input').value;
+    var nb_y = nombreRandom * nb_x;
+    document.getElementById('ex11_result').innerHTML = nb_y;
+    }// JavaScript Document
+	</script>
+</html>

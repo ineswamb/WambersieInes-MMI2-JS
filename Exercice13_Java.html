@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 13</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 13</h3>
+	<p>
+        <br>Largeur disponible : <b><span id="ex13_result"></span></b><br>
+      </p>
+	
+</body>
+	<script>
+    function screenWidth(){
+    var screenwidth = window.innerWidth;
+    document.getElementById('ex13_result').innerHTML = screenwidth;
+    }
+    window.onload = screenWidth;
+
+		
+	</script>
+</html>

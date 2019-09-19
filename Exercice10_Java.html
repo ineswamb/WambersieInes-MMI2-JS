@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 10</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 10</h3>
+	<p>
+        <input type="text" id="ex10_input" placeholder="Enter word(s)"> 
+        <button onclick="iterateWords()">Add to sentence</button>
+        <button onclick="resetWords()">Reset sentence</button>
+        <br>Sentence result : <b><span id="ex10_result"></span></b><br>
+      </p>
+	
+</body>
+	<script>
+	var value1= "";
+	function iterateWords(){
+    value1 += document.getElementById('ex10_input').value;
+    document.getElementById('ex10_result').innerHTML = value1;
+    }// JavaScript Document
+		
+	function resetWords(){
+    value1 = "";
+    document.getElementById('ex10_result').innerHTML = value1;
+    }// JavaScript Document
+	</script>
+</html>

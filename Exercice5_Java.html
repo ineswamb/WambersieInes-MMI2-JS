@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 5</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 5</h3>
+	<p>
+	 Résultat: <b><span id="ex5_result"></span></b><br>
+	</p>
+	
+	
+</body>
+	<script>
+	function RandomNumber(){
+	var nbmin = 50;
+	var nbmax = 1000;
+    var nombreRandom = Math.floor(Math.random() * (nbmax - nbmin) + nbmin);
+    document.getElementById('ex5_result').innerHTML = nombreRandom;
+    }// JavaScript Document
+		window.onload = RandomNumber;
+	
+	
+	
+	</script>
+</html>

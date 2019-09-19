@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 8</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 8</h3>
+	<p>
+	 Résultat: <b><span id="ex8_result"></span></b><br>
+	</p>
+	
+	
+</body>
+	<script>
+	function Fonction3(first,second,third){
+    var result_ex8 = (first / second) % third;
+    document.getElementById('ex8_result').innerHTML = result_ex8;
+    }// JavaScript Document
+	window.onload = Fonction3(50,2,6);
+	</script>
+</html>

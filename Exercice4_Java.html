@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 4</title>
+</head>
+
+<body>
+		<h3>Exercice 4</h3>
+      <p>
+        Résultat: <b><span id="ex4_result"></span></b><br>
+        <button onclick="plusTen()">plus 10</button>
+        <button onclick="diviseFive()">/5</button>
+        <button onclick="multiplyHeight()">x8</button>
+        <button onclick="minusTwo()">-2</button>
+        <button onclick="combinePlusTenMinusTwo()">+10 & -2</button>
+        <button onclick="resetExo4()">Reset</button>
+      </p>
+	
+	
+</body>
+	<script>
+	var nb_x = 0;
+
+    function plusTen(){
+	var nb_y = 10;
+	var result_ex4 = nb_x += nb_y;
+    document.getElementById('ex4_result').innerHTML = result_ex4;
+	
+    }// JavaScript Document
+
+    function diviseFive(){
+	var nb_z = 5;
+	var result_ex4 = nb_x /= nb_z;
+    document.getElementById('ex4_result').innerHTML = result_ex4;
+    }// JavaScript Document
+		
+	function multiplyHeight(){
+	var nb_w = 8;
+	var result_ex4 = nb_x *= nb_w;
+    document.getElementById('ex4_result').innerHTML = result_ex4;
+    }// JavaScript Document
+		
+	function minusTwo(){
+	var nb_v = 2;
+	var result_ex4 = nb_x -= nb_v;
+    document.getElementById('ex4_result').innerHTML = result_ex4;
+    }// JavaScript Document
+		
+	function combinePlusTenMinusTwo(){
+	var nb_a = 10;
+	var nb_b = 2;
+	var result_ex4 = nb_x += nb_a -= nb_b;
+    document.getElementById('ex4_result').innerHTML = result_ex4;
+    }// JavaScript Document
+		
+	function resetExo4(){
+	var nb_c = 0
+	var result_ex4 = nb_x *= nb_c;
+    document.getElementById('ex4_result').innerHTML = result_ex4;
+    }// JavaScript Document
+	</script>
+	
+</html>

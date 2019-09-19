@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exo 16</title>
+</head>
+
+<body>
+	
+	<h3>Exercice 16</h3>
+	<p>
+        <button onclick="RandomNombre()">Générer nombre aléatoire</button>
+		<br>Le nombre aléatoire est : <b><span id="ex16_result"></span></b><br><br>
+		<input type="number" id="ex16_input" placeholder="Entrez le montant"> 
+        <button onclick="Nombre()">Calculer</button>
+        <br>Résultat : <b><span id="ex16_result1"></span></b><br>
+      </p>
+	
+</body>
+	<script>
+   var nombreRandom;
+
+   function RandomNombre(){
+   nombreRandom = Math.floor(Math.random() * (100 - 1) + 1);
+   document.getElementById('ex16_result').innerHTML = nombreRandom;
+    }
+   function Nombre(){
+   var nombre = document.getElementById('ex16_input').value;
+   if (nombre > nombreRandom) {
+   document.getElementById('ex16_result1').innerHTML = 'Le nombre est trop grand';
+   }
+   else if (nombre < nombreRandom) {
+   document.getElementById('ex16_result1').innerHTML = 'Le nombre est trop petit';
+   }
+   else {
+   document.getElementById('ex16_result1').innerHTML = 'C est le bon nombre';
+   }
+   }
+
+	</script>
+</html>
